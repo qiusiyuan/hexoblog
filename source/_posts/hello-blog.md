@@ -1,7 +1,10 @@
 ---
 title: hello blog
 date: 2019-10-06 06:49:31
+categories:
+- Random
 tags:
+- random
 ---
 ## Start
 Hi everyone, this is my first blog. It's aimed for recording my journey of computer science technologies. It might contain **study notes**, **practice**, **experiment** and **problem and solution from my work**. I determine to use blog to record these things is because I find it necessary to take these things down. I think it's very useful to record what I did and what I learnt. I feel like I need a place so that later on, I can look back when I meet a problem that can be done using the similar technology or logic. I have tried 'boostnote', 'github' or even using paper and pen. I finally thought that I need a blog for this. So the essential point of this blog is not for others but for myself to refer back. It would be also good if this blog can help others :).
