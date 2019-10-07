@@ -1,27 +1,25 @@
-# Why Blog
-## 对博客的理解
-喜欢写Blog的人，会经历三个阶段。
->第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。
+# Siyuan Qiu blog 邱思远的博客
+This is a technique blog for Siyuan Qiu.
 
->第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
+It can be used for:
 
->第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。
- 
-我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。
+1. Study notes
+2. Technique summary
+3. Experimentation
+4. My opinion towards certain techniques
 
-通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。
+This blog will be probably written in either English or Chinese, or both XD. It's aimed for self study, experience sharing, and discussions. For some of my opinions, sometimes I feel like I cannot express myself properly either in English or even in Chinese. That might be because I have let the computer to express myself for a long time. As a developer, I'm used to let the programming language to show our ideas rather than talk it out. I think it's not good for me. As a society person, especially after I went to work, I need to talk to people to discuss about our ideas, express our feeling explicitly and logically. Blog is certainly a good way to improve my expression. That's why I start this. If there are any implicit statements that cause any confusion or inconvenience, which for sure would happen, please feel free to leave comments. Thank you!
 
-## 关于叶落阁
-**叶落阁** 是阿杰（杨玉杰）的个人站。
+此博客主要会被用作：
+1. 学习笔记
+2. 技术总结
+3. 实战经历
+4. 对于一些技术的想法和看法
 
-到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。
+我会用英文或者中文或者两个一起来写这个博客。主要是为了自我提升，分享经历和探讨一些问题。 近几年，我发现我的表达能力越来越差，无论是英文还是中文。我想可能是长期编程导致更习惯用编程语言来表达想法，而不是用文字或是口头来清晰地有逻辑地表达想法。尤其是在步入社会以后，我发现平常更多更重要的是要与人交流，清晰地，有逻辑地和人谈论，表达看法，阐论问题。我觉得博客是个很好的方式。于是我就起了这个博客。当然在博客中肯定会有不少有问题的表述，请一定留下您的评论。谢谢！
 
-本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次
+The total count of articles: <code class="article_number"></code> Total word count:<code class="site_word_count"></code>
 
-## 博客平台
-这个博客通过 [Hexo](https://hexo.io/) 生成，部署在 [GitHub Pages](https://pages.github.com/)，主题 [3-hexo](https://github.com/yelog/hexo-theme-3-hexo) 已经在github上开源
+Number of total visitors：<code class="site_uv"></code>, Number of total visits: <code class="site_pv"></code>
 
-主要功能：
-- 搜索支持文章标题、标签(#标签)、作者(@作者)
-- pad/手机等移动端适配
-- 页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a>
+
