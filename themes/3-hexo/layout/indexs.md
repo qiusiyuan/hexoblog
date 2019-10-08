@@ -22,4 +22,6 @@ The total count of articles: <code class="article_number"></code> Total word cou
 
 Number of total visitors：<code class="site_uv"></code>, Number of total visits: <code class="site_pv"></code>
 
+This blog start at **2019-10-6**.
+
 
