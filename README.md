@@ -6,6 +6,13 @@ blog theme: [3-hexo](https://github.com/yelog/hexo-theme-3-hexo)
 
 ### special notice
 
+To deploy blog,
+```
+hexo clean
+hexo g
+hexo d
+```
+
 when push: `git push origin` to avoid push to blog repo
 
 if deploy failed, remove .deploy_git
