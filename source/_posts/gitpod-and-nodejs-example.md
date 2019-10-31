@@ -3,7 +3,6 @@ title: gitpod and nodejs example
 date: 2019-10-31 12:24:07
 categories: 
 - Experience
-- StudyNotes
 tags:
 - nodejs
 - gitpod
@@ -25,7 +24,7 @@ Keyword for this service:
 **To use gitpod**, you are a big fan to VS code among all the other editors, or you would like to switch to simple but powerful editor supporting multiple popular languages including C++, Java, Javascript, Python, go and etc. And you think direct editing on github is troublesome and you definitely would like to edit your project online with proper devlopment environment setup so that you can test your changes. Then gitpod is for you. It's recommended but not required that you know how to setup a docker image.
 
 ## How does it look like?
-![93a71c25.png](:storage\162b08c2-4a6b-4f80-b21b-0e9fb48de8ff\93a71c25.png) Image from [Gitpod](https://www.gitpod.io/docs/)
+![gitpod example](https://user-images.githubusercontent.com/17970730/67916891-a339ec00-fb6d-11e9-9094-6c81afc7fc9d.png)
 
 Yes, it looks just like VS code, but it shows in your browser! 
 
