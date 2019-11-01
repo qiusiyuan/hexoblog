@@ -1,7 +1,8 @@
 ---
 title: gitpod and nodejs example
 date: 2019-10-31 12:24:07
-categories: 
+lang: en
+categories:
 - Experience
 tags:
 - nodejs
@@ -26,7 +27,7 @@ Keyword for this service:
 ## How does it look like?
 ![gitpod example](https://user-images.githubusercontent.com/17970730/67916891-a339ec00-fb6d-11e9-9094-6c81afc7fc9d.png)
 
-Yes, it looks just like VS code, but it shows in your browser! 
+Yes, it looks just like VS code, but it shows in your browser!
 
 To open a workspace for your github project, you just need to  prefix the URL in the address bar of your browser with https://gitpod.io/# for example, https://gitpod.io/#https://github.com/{you}/{project}. Really simple right? But I recommend you to install browser extension for gitpod, so that you just need a single-click to start it. [Instruction on Extension](https://www.gitpod.io/docs/20_browser_extension/)
 
@@ -58,13 +59,13 @@ tasks:
 ports:
   - port: 3000
     onOpen: open-preview
-    
+
 ```
 I choose `node：alpine` for my base image, this is enough for me. And `alpine` is known for it's small size and no redundency. If you want to build your own image, you can use,
 ```yml
 image:
   file: .gitpod.dockerfile
-  
+
 ```
 For task, right after workspace is loaded, I ask for a `npm install` to install dependency. Notice that using `- init` will only be run during initialization. [Here](https://www.gitpod.io/docs/44_config_start_tasks/#start-tasks) are other command that you can specify.
 
@@ -85,5 +86,5 @@ See this is awesome!
 To do git commit and push, you can just use the terminal for commanding. Or just use VS code git tool. Notice that you may be asked for grant write permissions to your github.
 
 ## Conclustion
-Gitpod is really convenient and powerful, and the configuration is direct and simple. This is benefial for not only individual programmers but also for enterprises or a group. Imagine that a group of people work on the same project but with different asset( Windows, Linux, Mac). People and new comers used to have to spend a lot of time on dev environment setup. But for now, it's just a single-click for everyone. I think such a cloud editor like git pod is the future. VS code is gathering its large community, docker and kubernete is very popular in current cloud industry, github is one of the most popular version control service. Gitpod combine those together, this is the trend. Modern technologies are mature and convenient. Programmers are tend to build better application by using those technologies instead of building from wheels. Programmers are changing their programming style and work environments. Programming should become more convenient and simple. I'm really eager to see future development of such an application. 
+Gitpod is really convenient and powerful, and the configuration is direct and simple. This is benefial for not only individual programmers but also for enterprises or a group. Imagine that a group of people work on the same project but with different asset( Windows, Linux, Mac). People and new comers used to have to spend a lot of time on dev environment setup. But for now, it's just a single-click for everyone. I think such a cloud editor like git pod is the future. VS code is gathering its large community, docker and kubernete is very popular in current cloud industry, github is one of the most popular version control service. Gitpod combine those together, this is the trend. Modern technologies are mature and convenient. Programmers are tend to build better application by using those technologies instead of building from wheels. Programmers are changing their programming style and work environments. Programming should become more convenient and simple. I'm really eager to see future development of such an application.
 
