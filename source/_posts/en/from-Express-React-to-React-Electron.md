@@ -7,6 +7,7 @@ categories:
 tags:
 - react
 - electron
+- nodejs
 ---
 
 ## Why Electron
