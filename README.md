@@ -6,7 +6,17 @@ blog theme: [3-hexo](https://github.com/yelog/hexo-theme-3-hexo)
 
 ### special notice
 
-To deploy blog,
+This repo is using travis github page deploy.
+
+A single commit will trigger travis to deploy blog on to https://qiusiyuan.github.io/
+
+Travis dashboard:
+
+https://travis-ci.com/
+
+login with github
+
+(deprecated) To deploy blog,
 ```
 hexo clean
 hexo g

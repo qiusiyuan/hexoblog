@@ -1,6 +1,7 @@
 ---
 title: from Express-React to React-Electron
 date: 2019-10-12 08:29:46
+lang: en
 categories:
 - Experience
 tags:
@@ -13,7 +14,7 @@ tags:
 
 [React](https://reactjs.org/) is a very popular frontend framework, that make interactive UIs really easy to implement.
 
-Express-React is currently a popular model for web application. It's acing for its simplicity and easiness to deploy. Not only production but also individuals are building a Express-React app for self-usage. In many cases, the usages are very small and for simple tasks. Imagine that if we could make them desktop apps, so that there's no server, and you only need a simple double-click and the application will start. 
+Express-React is currently a popular model for web application. It's acing for its simplicity and easiness to deploy. Not only production but also individuals are building a Express-React app for self-usage. In many cases, the usages are very small and for simple tasks. Imagine that if we could make them desktop apps, so that there's no server, and you only need a simple double-click and the application will start.
 
 And here's where the Electron framework comes in.
 
@@ -73,12 +74,12 @@ app.on('activate', () => {
 
 ```
 
-Notice that we ask window to load a html file from 
+Notice that we ask window to load a html file from
 ```js
 win.loadFile(
   "build/index.html"
   );
-  
+
 ```
 This is where the React build file should locate and this is default by calling `react-scripts build`
 
@@ -111,9 +112,9 @@ To start the App for development, run `npm run file-start`. From above script, t
 Notice that your App might shows nothing or can't function properly as there are still something to care about.
 
 ## BroswerRouter
-Your React app, as it is transformed from an web app, must have **Routes** for multiple pages. 
+Your React app, as it is transformed from an web app, must have **Routes** for multiple pages.
 
-If you are using `react-router-dom`, you might have problem that your page is blank when you start electron if you are using **BrowserRouter**. 
+If you are using `react-router-dom`, you might have problem that your page is blank when you start electron if you are using **BrowserRouter**.
 
 In this case we should replace **BrowserRouter** with **HashRouter**.
 
@@ -122,15 +123,15 @@ In this case we should replace **BrowserRouter** with **HashRouter**.
 win.loadFile(
   "build/index.html"
   );
-  
+
 ```
-So we need the client to handle the routes change in this case, and we replace the **BrowserRouter** with the **HashRouter** here. 
+So we need the client to handle the routes change in this case, and we replace the **BrowserRouter** with the **HashRouter** here.
 [more info about HashRouter](https://reacttraining.com/react-router/web/api/HashRouter)
 
 ## Communication between backend
 Your react app might have communication between the Express backend(or other backend) through http request.
 
-For example, in my project, I send a http request from frontend and get the data sent back from my backend and use it to update states of my component. My backend, which also setup in my local, once get the request, will talk to my local file system, fetch the data, compose the response and then send it back to frontend. 
+For example, in my project, I send a http request from frontend and get the data sent back from my backend and use it to update states of my component. My backend, which also setup in my local, once get the request, will talk to my local file system, fetch the data, compose the response and then send it back to frontend.
 
 If your app is the similar to mine, here are a few points to make changes to fulfill our pure offline desktop app.
 
@@ -233,7 +234,7 @@ getData(){
 }
 
 ```
-Notice that I have `''` as the `argument` to send with `data` event, because I don't need any arguments in this use case. You can still send any data as the arguments to `ipcMain`, for example, 
+Notice that I have `''` as the `argument` to send with `data` event, because I don't need any arguments in this use case. You can still send any data as the arguments to `ipcMain`, for example,
 ```js
 window.ipcRenderer.send('getOne', {uid: this.state.uid});
 
@@ -244,7 +245,7 @@ Also notice that to get response, I used `window.ipcRenderer.once`, this is impo
 ## Data storage
 Your backend might need to store data in the local file system. Remember that your Electron app is a desktop app and it can be installed in some other computers. No one wants a app storing data in some random places. So Electron provides certains places to store it.
 
-By default, Electron stores app data in 
+By default, Electron stores app data in
 * `%APPDATA%` on Windows
 * `$XDG_CONFIG_HOME` or `~/.config` on Linux
 * `~/Library/Application Support` on macOS
@@ -290,7 +291,7 @@ Add all the used files into `"build"`,  `"files"` in the `package.json`,
 ```
 `server/**/*` is my backend source file, it includes utility functions and their dependency functions that I reused in the electron app and this is why I put it in the build.
 
-As shown in the `scripts` section in `package.json`, run 
+As shown in the `scripts` section in `package.json`, run
 ```
 npm run build
 

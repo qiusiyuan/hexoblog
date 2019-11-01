@@ -1,5 +1,6 @@
 ---
 title: Nmap study notes
+lang: ch
 date: 2019-10-07 12:28:26
 categories:
 - StudyNotes
@@ -108,9 +109,9 @@ nmap -p s* {host}
 
 ```
 ### NSE 介绍
-nmap script engine 
+nmap script engine
 ```
-nmap --script {scriptname} 
+nmap --script {scriptname}
 
 ```
 ```
