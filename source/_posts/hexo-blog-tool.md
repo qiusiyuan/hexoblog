@@ -9,6 +9,8 @@ tags:
 - blog
 ---
 
+[Full doc](https://hexo.io/docs/)
+
 ## Environment requirement
 * nodejs
 * git
