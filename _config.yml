@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://qiusiyuan.github.io
 root: /
-permalink: :lang/:title/
+permalink: :title/:lang/
 permalink_defaults:
 
 # Directory
