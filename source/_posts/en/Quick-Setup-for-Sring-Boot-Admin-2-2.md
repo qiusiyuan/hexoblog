@@ -158,3 +158,6 @@ spring.boot.admin.client.password=password
 ### Launch service
 Now you launch your registered services, and you can monitor it through the SBA dashboard.
 
+## More info
+1. You can refer to my SBA project https://github.com/qiusiyuan/springboot-play/tree/master/SBAserver
+2. More about Spring Boot Admin https://codecentric.github.io/spring-boot-admin/current/
