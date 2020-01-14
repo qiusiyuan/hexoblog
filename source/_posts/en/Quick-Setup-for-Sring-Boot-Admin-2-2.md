@@ -48,8 +48,6 @@ spring.profiles.active=secure
 
 spring.security.user.name=admin
 spring.security.user.password=password
-spring.boot.admin.client.username=client
-spring.boot.admin.client.password=password
 ```
 1. server port set to 8089
 2. `server.forward-headers-strategy=native` set for services behind a secure layer
@@ -134,7 +132,7 @@ Prepare a normal spring boot service.
 Add dependency
 
 **build.gradle**
-```json
+```
 
 dependencies {
     
@@ -151,10 +149,20 @@ dependencies {
 ```
 spring.boot.admin.client.url=http://localhost:8089  
 management.endpoints.web.exposure.include=*
-spring.boot.admin.client.username=client
+spring.boot.admin.client.username=admin
 spring.boot.admin.client.password=password
 
 ```
+### Security config
+If you have configure `WebSecurityConfigurerAdapter` for this web application. You need to give free access to `/actuator` endpoints.
+For example:
+```java 
+protected void configure( HttpSecurity httpSecurity ) throws Exception {
+    httpSecurity.antMatchers("/actuator/**").permitAll() 
+}
+```
+So that SBA can get info from this service.
+
 ### Launch service
 Now you launch your registered services, and you can monitor it through the SBA dashboard.
 
