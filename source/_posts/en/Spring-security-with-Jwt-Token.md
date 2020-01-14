@@ -266,7 +266,8 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     }
 }
 ```
-Important notes: After this filter, jwt token information will be extracted into user info and store in `SecurityContextHolder`, in other services, you can get the user info in `SecurityContextHolder.getContext().getAuthentication();`
+Important notes: After this filter, jwt token information will be extracted into user info and store in `SecurityContextHolder`, in other services, you can get the user info in `SecurityContextHolder.getContext().getAuthentication();`.
+This will return an `Authentication ` object, from which you can get `UserDetail` Object by `auth.getPrincipal()`.  For other fields, please refer to https://docs.spring.io/spring-security/site/docs/3.0.x/apidocs/org/springframework/security/core/Authentication.html .
 
 # Web Security Configuration
 Then we can configure the spring secure web configuration 
@@ -320,7 +321,9 @@ Important notes:
 3. I allowed all the request to `actuator` endpoints which is for SBA(spring boot admin) to monitor this service.
 4. Then I apply the filter for JWT token.
 # User management controller
+
 Simple controller
+
 ```java
 @RestController
 public class JwtTokenAuthController {
@@ -342,4 +345,5 @@ public class JwtTokenAuthController {
 ```
 
 # Launch
+
 Now you must call `login` api to get the token first to get access to other apis.
