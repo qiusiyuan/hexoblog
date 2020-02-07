@@ -199,6 +199,7 @@ friends:
   Spring-Boot-In-Action: https://github.com/hansonwang99/Spring-Boot-In-Action
   SQL syntax: https://www.zentut.com/sql-tutorial
   MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web
+  Spring Security CSRF: https://spring.io/blog/2013/08/21/spring-security-3-2-0-rc1-highlights-csrf-protection/
   
 ##########评论设置#############
 comment:
