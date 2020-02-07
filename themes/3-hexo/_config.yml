@@ -200,7 +200,8 @@ friends:
   SQL syntax: https://www.zentut.com/sql-tutorial
   MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web
   Spring Security CSRF: https://spring.io/blog/2013/08/21/spring-security-3-2-0-rc1-highlights-csrf-protection/
-  
+  JWT token storage cookies vs web storage: https://stormpath.com/blog/where-to-store-your-jwts-cookies-vs-html5-web-storage
+
 ##########评论设置#############
 comment:
   on: true
